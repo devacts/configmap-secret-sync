@@ -1,0 +1,20 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: game-demo1
+  labels:
+    sync-me: "true"
+data:
+  player_initial_lives: "3"
+
+---
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: game-demo2
+  labels:
+    sync-me: "true"
+data:
+  player_initial_lives: "0"
