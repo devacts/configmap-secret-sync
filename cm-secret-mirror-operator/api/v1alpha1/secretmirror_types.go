@@ -49,7 +49,6 @@ type SecretMirrorStatus struct {
 
 // +kubebuilder:object:root=true
 // +kubebuilder:subresource:status
-// +kubebuilder:printcolumn:name="Name",type="string",JSONPath=".metadata.name",description="SecretMirror Name, same as configmap"
 // +kubebuilder:printcolumn:name="Secret Name",type="string",JSONPath=".status.secretName",description="Secret Name"
 // +kubebuilder:printcolumn:name="Secret Status",type="string",JSONPath=".status.conditions[?(@.type=='Synced')].status",description="Secret synced or not"
 // +kubebuilder:printcolumn:name="Age",type="date",JSONPath=".metadata.creationTimestamp",description="Age of SecretMirror"
